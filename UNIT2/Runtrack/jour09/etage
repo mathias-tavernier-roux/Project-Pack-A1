@@ -1,0 +1,29 @@
+        $word = "*";
+        if (strpos($requete, $word) !== FALSE) 
+            {
+            echo "<td>id</td>";
+            echo "<td>nom</td>";
+            echo "<td>etage</td>";
+            echo "<td>superficie</td>";
+            goto end;
+            }
+        $word = "id";
+        if (strpos($requete, $word) !== FALSE) 
+            {
+            echo "<td>id</td>";
+            }
+        $word = " nom";
+        if (strpos($requete, $word) !== FALSE) 
+            {
+            echo "<td>nom</td>";
+            }
+        $word = "numero";
+        if (strpos($requete, $word) !== FALSE) 
+            {
+            echo "<td>numero</td>";
+            }
+        $word = "superficie";
+        if (strpos($requete, $word) !== FALSE) 
+            {
+            echo "<td>superficie</td>";
+        :end

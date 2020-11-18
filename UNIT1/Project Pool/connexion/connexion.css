@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Ubuntu+Mono:wght@700&display=swap');
+body
+{
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+header
+{
+    text-align: center;
+    
+}
+.Flex-H2
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.Flex-H
+{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.Flex-V
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+div
+{
+   text-align: center;
+}
+textarea
+{
+   width: 449px; 
+   height: 49px;
+   resize: vertical;
+   
+}
+img
+{
+   align-items: center;
+}
+h1
+{
+   font-size: 40px;
+   font-family: 'Ubuntu Mono', monospace;
+   color: white
+}
+h2
+{
+   font-size: 20px;
+   font-family: 'Exo 2', sans-serif;
+   color: white
+}
+h3
+{
+   font-size: 20px;
+   font-family: 'Exo 2', sans-serif;
+   color: white
+}
+label
+{
+   font-size: 20px;
+   font-family: 'Exo 2', sans-serif;
+   color: white;
+   margin-left: 5px;
+}
+button {
+   padding: 16px 42px;
+   box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+   line-height: 1.25;
+   background: #318CE7;
+   text-decoration: none;
+   color: white;
+   font-size: 9px;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   position: relative;
+   transition: background-color 0.6s ease;
+   overflow: hidden;
+}
+button:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   top: 50%;
+   left: 50%;
+   transform-style: flat;
+   transform: translate3d(-50%, -50%, 0);
+   background: rgba(255, 255, 255, .1);
+   border-radius: 100%;
+   transition: width 0.3s ease, height 0.3s ease;
+}
+button:focus, button:hover {
+   background: #0039a6;
+}
+button:active:after {
+   width: 200px;
+   height: 200px;
+}

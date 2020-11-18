@@ -1,0 +1,95 @@
+html{height: 100vh;}
+
+body{
+	min-height: 100vh;
+	min-width: 100%;
+	padding: none;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	background-image: url('STYLE/bodyback.jpg');
+	overflow-x: hidden;
+}
+
+@font-face{
+	src: url('POLICE/police1.otf');
+	font-family: 'police1';
+}
+
+a{text-decoration: none;}
+
+header, footer, main{width: 100%;}
+header:not(.mainheader){height: 10vh;}
+	.mainheader{height: 35vh;}
+main{text-align: center;}
+
+/*ACCUEIL*/
+.summary{display: flex; flex-wrap: wrap; width: 100%;}
+
+.summary_top{
+	width: 100%; 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: space-evenly;
+}
+	.summary_top section:hover{opacity: 0.8;}
+	
+.summary_bot{
+	width: 100%; 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: space-around;
+	margin-top: 5vh;
+}
+	.summary_bot section:hover{opacity: 0.8;}
+
+.summary_bot img, .summary_top img{border-radius: 10px; width: 15vw;}
+	 .summary_bot img:hover, .summary_top img:hover{width: 18vw; transition: 0.5s;}
+	 
+.article_form{display: flex; justify-content: center; padding: 10vh 0; margin-bottom: 15vh;}
+	.article_form h2, label{backdrop-filter: blur(10px);}
+article form{display: flex; flex-direction: column; justify-content: center; width: 20vw;}
+
+
+/*HEADER & FOOTER*/
+.watermark{display: flex; justify-content: center; padding: 3vh 0; width: 100%;}
+
+nav{width: 100%; display: flex; justify-content: center; font-family: police1; font-size: 1.2em;}
+.header_nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	width: 80%;
+}
+	.header_nav a{color: black; font-family: 'Nunito', sans-serif;}
+		.header_nav a:hover{color: white;}
+	.float_nav{
+		opacity: 0; 
+		list-style: none; 
+		position: absolute; 
+		transform: translateX(-2vw); 
+		width: 100%;
+		backdrop-filter: blur(2px);
+		background: rgba(255,255,255,0.3);
+	}
+		.header_nav li:hover .float_nav{opacity: 1; transition: 1s;}
+		
+footer{position: absolute; bottom: 0;}
+
+.link_container{
+	display: flex;
+	background-color: white;
+	justify-content: space-evenly;
+	height: 15vh;
+	align-items: center;
+	background: rgba(255,255,255,0.2);
+	backdrop-filter: blur(2px);
+	font-family: police1;
+}
+	.link{display: flex; flex-direction: column;}
+	.link a{color: black; font-family: 'Nunito', sans-serif;}
+		.link a:hover{color: white;}
+		

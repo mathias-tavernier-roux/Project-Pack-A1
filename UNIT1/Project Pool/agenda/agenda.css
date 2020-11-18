@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Ubuntu:wght@700&display=swap');*
+
+*
+{
+    text-align: center;
+}
+body
+{
+	background-color: gray;
+}
+h1
+{
+	font-family: 'Ubuntu', sans-serif;
+	color:white;
+}
+h2
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+label
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+.tab
+{
+    color: black;
+}
+.HFlex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.VFlex
+{
+    display: flex;
+    flex-direction: column;
+}
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:8px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;padding-top: 5px;}
+        .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+        .tftable tr {background-color:#d4e3e5;}
+        .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+        .tftable tr:hover {background-color:#ffffff;}
+
+      

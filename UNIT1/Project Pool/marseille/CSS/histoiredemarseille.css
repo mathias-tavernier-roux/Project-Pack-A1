@@ -1,0 +1,22 @@
+body{
+	background-attachment: fixed;
+}
+
+.histoiredemarseille{
+	width: 100%;
+	margin: 35vh 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+	.histoiredemarseille h1, .histoiredemarseille h2{width: 100%; font-family: 'Lobster', cursive;}
+
+section{
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.7);
+	width: 60vw;
+	text-align: justify;
+	margin-bottom: 20vh;
+}
+	section p{padding: 3%; font-family: 'Libre Franklin', sans-serif; color: white;}

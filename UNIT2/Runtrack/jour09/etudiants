@@ -1,0 +1,41 @@
+    $word = "*";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>id</td>";
+        echo "<td>prenom</td>";
+        echo "<td>nom</td>";
+        echo "<td>naissance</td>";
+        echo "<td>sexe</td>";
+        echo "<td>email</td>";
+        goto end;
+        }
+    $word = "Id";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>id</td>";
+        }
+    $word = "Prenom";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>prenom</td>";
+        }
+    $word = "Nom";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>nom</td>";
+        }
+    $word = "Naissance";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>naissance</td>";
+        }
+    $word = "Sexe";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>sexe</td>";
+        }
+    $word = "Email";
+    if (strpos($requete, $word) !== FALSE) 
+        {
+        echo "<td>email</td>";
+        }

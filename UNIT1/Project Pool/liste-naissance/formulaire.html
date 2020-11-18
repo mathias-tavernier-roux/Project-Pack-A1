@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Donation</title>
+    <link rel=stylesheet href=liste.css>
+</head>
+<body>
+    <form>
+    <h1>Faire Un Don</h1>
+        <h2>Type De Don</h2>
+            <select class="case dropdownselect" id="type" name="type" required>
+                <option value="" selected="selected" disabled="disabled">Choisissez Le Type de Dons</option>
+                <option value="Mon">Monetaire</option>
+                <option value="Ele">Element</option>
+                </select>
+
+    <h1>Faire Un Don Monetaire</h1>
+        <h2>Type De Don Monaitaire</h2>
+            <select class="case dropdownselect" id="mon" name="mon">
+                <option value="" selected="selected" disabled="disabled">Choisissez pour quel pot souhaitez vous faire un don</option>
+                <option value="PC1">Pot Commun : Kit de Sortie</option>
+                <option value="PC2">Pot Commun : Achat de Cadeaux a L'Enfant</option>
+                </select>
+                <input type="number" />
+                <a>Euros</a>
+    <h1>Faire Un Don D'Elements</h1>
+        <h2>Type De Don D'Elements</h2>
+            <select class="case dropdownselect" id="mon" name="mon">
+                <option value="" selected="selected" disabled="disabled">Choisissez Le Type d'element</option>
+                <option value="J">Jouets</option>
+                <option value="V">Vetements</option>
+                </select>
+    </form>
+    <a class="button" href="liste.html">Envoyer Le Formulaire</a>
+    <a class="button" href="liste.html">Annuler</a>
+</body>
+</html>

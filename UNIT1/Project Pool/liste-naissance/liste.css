@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Satisfy&display=swap');
+*
+{
+    text-align: center;
+    align-items: center;
+}
+body
+{
+    background-color: sandybrown
+}
+form
+{
+    margin-bottom: 30px;
+}
+.tftable-Urgent {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+        .tftable-Urgent th {font-size:12px;background-color:#ff0000;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+        .tftable-Urgent tr {background-color:#ff0000;}
+        .tftable-Urgent td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+        .tftable-Urgent tr:hover {background-color:#ffffff;}
+.tftable-Essentiel {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+        .tftable-Essentiel th {font-size:12px;background-color:#ddcf02;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+        .tftable-Essentiel tr {background-color: #ddcf02;}
+        .tftable-Essentiel td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+        .tftable-Essentiel tr:hover {background-color:#ffffff;}
+.tftable-Normal {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+        .tftable-Normal th {font-size:12px;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+        .tftable-Normal tr {background-color:#cdcdcd;}
+        .tftable-Normal td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+        .tftable-Normal tr:hover {background-color:#ffffff;}
+.tftable-NObligatoire {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+        .tftable-NObligatoire th {font-size:12px;background-color:#0095ff;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+        .tftable-NObligatoire tr {background-color:#0095ff;}
+        .tftable-NObligatoire td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+        .tftable-NObligatoire tr:hover {background-color:#0095ff;}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #a12727;
+    border-radius: 8px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    -webkit-box-shadow: #ff5959 0px 0px 40px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 40px 0px;
+    box-shadow: #ff5959 0px 0px 40px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+}
+h1
+{
+    color:white;
+    font-family: 'Satisfy', cursive;
+}
+h2
+{
+    color: white;
+    font-family: 'Chilanka', cursive;
+}

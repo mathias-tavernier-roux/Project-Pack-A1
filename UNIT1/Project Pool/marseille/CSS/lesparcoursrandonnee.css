@@ -1,0 +1,22 @@
+body{
+	background-attachment: fixed;
+}
+
+.lesparcoursrandonnee{
+	width: 100%;
+	margin: 35vh 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+	.lesparcoursrandonnee h1, .lesparcoursrandonnee h2{width: 100%; font-family: 'Lobster', cursive;}
+
+section{
+	display: flex;
+	background: rgba(0,0,0,0.7);
+	width: 60vw;
+	flex-direction: column;
+	color: white;
+	margin-bottom: 15vh;
+}
+	section img{width: 60vw;}

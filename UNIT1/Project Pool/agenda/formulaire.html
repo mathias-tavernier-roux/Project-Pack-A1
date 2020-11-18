@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=agenda.css>
+    <title>Ajouter un evenement</title>
+</head>
+<body>
+    <form>
+    <h1>Ajouter Un Evenement</h1>
+        <h2>Date de L'Evenement</h2>
+            <select class="case dropdownselect" id="Jour" name="Jour" required>
+                <option value="" selected="selected" disabled="disabled">-- Jour --</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            <select class="case dropdownselect" id="Mois" name="Mois" required>
+                <option value="" selected="selected" disabled="disabled">-- Mois --</option>
+                <option value="1">Janvier</option>
+                <option value="2">Fevrier</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value="5">Mai</option>
+                <option value="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Aout</option>
+                <option value="9">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Decembre</option>
+
+            </select>
+            <select class="case dropdownselect" id="Heure" name="Heure" required>
+                <option value="" selected="selected" disabled="disabled">-- Heure --</option>
+                <option value="8-00">08h00</option>
+                <option value="8-00">08h15</option>
+                <option value="8-00">08h30</option>
+                <option value="8-00">08h45</option>
+                <option value="8-00">09h00</option>
+                <option value="8-00">09h15</option>
+                <option value="8-00">09h30</option>
+                <option value="8-00">09h45</option>
+                <option value="8-00">09h00</option>
+                <option value="8-00">09h15</option>
+                <option value="8-00">09h30</option>
+                <option value="8-00">09h45</option>
+                <option value="8-00">10h00</option>
+                <option value="8-00">11h15</option>
+                <option value="8-00">11h30</option>
+                <option value="8-00">11h45</option>
+                <option value="8-00">12h00</option>
+                <option value="8-00">12h15</option>
+                <option value="8-00">12h30</option>
+                <option value="8-00">12h45</option>
+                <option value="8-00">13h00</option>
+                <option value="8-00">13h15</option>
+                <option value="8-00">13h30</option>
+                <option value="8-00">13h45</option>
+                <option value="8-00">14h00</option>
+                <option value="8-00">15h15</option>
+                <option value="8-00">15h30</option>
+                <option value="8-00">15h45</option>
+                <option value="8-00">16h00</option>
+                <option value="8-00">17h15</option>
+                <option value="8-00">17h30</option>
+                <option value="8-00">17h45</option>
+                <option value="8-00">18h00</option>
+                <option value="8-00">18h15</option>
+                <option value="8-00">18h30</option>
+                <option value="8-00">18h45</option>
+                <option value="8-00">19h00</option>
+                <option value="8-00">19h15</option>
+                <option value="8-00">19h30</option>
+                <option value="8-00">19h45</option>
+                <option value="8-00">20h00</option>
+                <option value="8-00">20h15</option>
+                <option value="8-00">20h30</option>
+                <option value="8-00">20h45</option>
+            </select>
+            <h2>Informations Sur L'Evenement</h2>
+            <div>
+                <label for="titre">Titre</label>
+                <input type="text" id="titre" name="titre" required
+                       placeholder="Titre"
+                       size="30">
+              </div>
+              <div>
+                <label for="desc">Details</label>
+                <input type="text" id="desc" name="desc" required
+                       placeholder="Details"
+                       size="30">
+              </div>
+              <div>
+                <a href="agenda.html" class="myButton">Ajouter L'Evenement A L'Agenda</a> 
+              </div>
+    </form>
+</body>
+</html>

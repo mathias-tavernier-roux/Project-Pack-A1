@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <title>Register</title>
+        <link rel="stylesheet" href="connexion.css" />
+    </head>
+
+    <body>
+        <!-- Corps de la page -->
+        <header>
+            <h1>Nom du Site</h1>
+            <div class=Flex-H2>
+                <div>
+                    <a href="connexion.html"><button class="members" type="button">Se Connecter</button></a>
+                </div>
+                <div>
+                    <a href="inscription.html"><button class="members" type="button">S'Inscrire</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class=Flex-V>
+            <div>
+            <h2>Page d'Inscription</h2>
+            <form action="/regscript" method="post">
+            <h2>Information de Connection</h2>
+                <div class=Flex-H>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="login">Login </label>
+                </div>
+                <div class=Flex-H>
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Mot de Passe</label>
+                </div>
+                <div class=Flex-H>
+                    <input type="password" id="password-c" name="password-c" required>
+                    <label for="password-c">Confirmation du Mot de Passe</label>
+                </div>
+                <div class=Flex-H>
+                    <input type="email" id="email" name="main" placeholder="exemple@exemple.com" required>
+                    <label for="email">Email</label>
+                </div>
+            <div>
+            <h2>Information Personnel</h2>
+            <div>
+                    <div class=Flex-H>
+                    <div>
+                        <input type="radio" id="men" name="mow" value="man" required>
+                        <label for="man">Mr</label>
+                    </div>
+                  
+                    <div>
+                        <input type="radio" id="women" name="mow" value="women" required>
+                        <label for="women">Mme</label>
+                    </div>
+                    </div>
+                <div class=Flex-H>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="nom">Nom </label>
+                </div>
+                <div class=Flex-H>
+                    <input type="text" id="prenom" name="prenom" required>
+                    <label for="prenom">Prenom :</label>
+                </div>
+                <div class=Flex-H>
+                    <input type="text" id="dn" name="dn" placeholder="Jour/Mois/Année" required>
+                    <label for="dn">Date de Naissance :</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Niveau Européen du Dernier Diplome Obtenu</h2>
+                    <select class="case dropdownselect" id="LVL" name="LVL" required>
+                        <option value="" selected="selected" disabled="disabled">-- select one level --</option>
+                                <option value="8">Niveau 8 Europeen (Doctorat / BAC +8)</option>
+                                <option value="7">Niveau 7 Europeen (Master / BAC +5)</option>
+                                <option value="6">Niveau 6 Europeen (License / BAC +3)</option>
+                                <option value="5">Niveau 5 Europeen (BTS et DUT / BAC +2)</option>
+                                <option value="4">Niveau 4 Europeen (Baccalauréat / BAC)</option>
+                                <option value="INF4">Inferieur au Niveau 4 Europeen</option>
+                                </select>
+                                <input type="text" id="LVLD" name="LVLD" required>  
+                </div>
+            </div>
+            <div>
+                <h3>Vos Trois Hobbies Principaux</h3>
+                <div class=Flex-H>
+                    <input type="text" id="H1" name="H1" required>
+                    <label for="H1">Hobbie H°1</label>
+                </div>
+                <div class=Flex-H>
+                    <input type="text" id="H2" name="H2" required>
+                    <label for="H2">Hobbie H°2</label>
+                </div>
+                <div class=Flex-H>
+                    <input type="text" id="H3" name="H3" required>
+                    <label for="H3">Hobbie H°3</label>
+                </div>
+            </div>
+            <h3 for="Presentation">Presentez Vous</h3>
+            <div>
+                <textarea name="Presentation" id="Presentation" required></textarea>
+            </div>
+            </form>
+            </div>
+            </div>
+            <div>
+                <a href="inscription-success.html"><button class="members" type="button">S'Inscrire</button></a>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

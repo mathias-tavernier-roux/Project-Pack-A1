@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Phonotheque</title>
+    <link rel="stylesheet" href="phonotheque.css">
+</head>
+<body>
+    <header class=Mheader>
+        <div>
+            <h1 class= Mh1>
+                Ma Phonotheque
+            </h1>
+        </div>
+        <div class= Flex-H>
+            <a href="phonotheque.html" class="myButton">Accueil</a>
+            <a href="style.html" class="myButton">Rap Français</a>
+            <a href="style1.html" class="myButton">Musique de DJ</a>
+            <a href="style2.html" class="myButton">Rock and Roll</a>
+            <a href="style3.html" class="myButton">Jazz</a>
+        </div>
+    </header>
+    <img class=wave src="reverse-wave.png">
+    <main class= Mmain>
+        <h1>Le Rock à l'état pur</h1>
+        <div class=choose> 
+        <section>
+            <a href="#musique1">1
+            </a>
+            <a href="#musique2">2
+            </a>
+            <a href="#musique3">3
+            </a>
+            <a href="#musique4">4
+            </a>
+        </section>
+        </div>
+        <section class="albumcontainer">
+            <article class="album" id="musique1">
+                <figure class="albumfigure">
+                    <img class="albumcover" src="ressources/aladdinsane.jpg" alt="Aladdin Sane de David Bowie">
+                    <figcaption>Aladdin Sane</figcaption>
+                </figure>
+                <p class="albumdescription">C'est au cours de la tournée américaine du 22 septembre au 22 décembre 1972 que David Bowie écrit la
+                    majeure partie de cet album emblématique et controversé. Chaque chanson fait référence à une ville
+                    ou à une étape particulière de la tournée. Il sera enregistré au Studio Trident à Londres de
+                    décembre 1972 à janvier 1973. C'est l'album le plus
+                    «fructueux» de David Bowie, dont les ventes sont estimées à plus de 4 600 000 exemplaires dans le
+                    monde. Il se place au sommet des charts en Angleterre et à la 17ème place aux Etats-Unis.</p>
+                <div class="artistsocial">
+                    <a href="https://www.facebook.com/davidbowie/">Facebook</a>
+                    <a href="https://twitter.com/davidbowiereal?lang=fr">Twitter</a>
+                    <a href="https://www.instagram.com/davidbowie/?hl=fr">Instagram</a>
+                </div>
+                <audio controls muted autoplay loop class="lecteur" id="musique1">
+                    <source src="ressources/david-bowie-aladdin-sane.mp3" type="audio/mp3">
+                    </audio>
+            </article>
+            <article class="album" id="musique2">
+                <figure class="albumfigure">
+                    <img class="albumcover" src="ressources/darksideofthemoon.jpg" alt="Dark side of the Moon de Pink Floyd">
+                    <figcaption>Dark side of the Moon</figcaption>
+                </figure>
+                <p class="albumdescription">Ébauché, composé, retravaillé et présenté un an avant sa sortie officielle pendant leur tournée
+                    mondiale de 1972 à l’aide d’un matériel ultra-sophistiqué, The Dark Side Of The Moon est l’album
+                    culte des Pink Floyd et un des trois plus vendus au monde. Huitième album du groupe, il marque le
+                    tournant commercial de la formation anglaise notamment par l’apparition de leurs premiers tubes avec
+                    les titres « Money », « Us And Them » et « Time ». Philippe Gonin prend la plume pour analyser les
+                    tenants et les aboutissants de cette oeuvre extra-ordinaire.
+                </p>
+                <div class="artistsocial">
+                    <a href="https://www.facebook.com/pinkfloyd">Facebook</a>
+                    <a href="https://twitter.com/pinkfloyd?lang=fr">Twitter</a>
+                    <a href="https://www.instagram.com/pinkfloyd/?hl=fr">Instagram</a>
+                </div>
+                <audio controls class="lecteur" id="musique2"> 
+                    <source src="ressources/pink-floyd-the-dark-side-of-the-moon-time-flac.mp3" type="audio/mp3">
+                    </audio>
+            </article>
+            <article class="album" id="musique3">
+                <figure class="albumfigure">
+                    <img  class="albumcover" src="ressources/Nevermind.jpg" alt="Nevermind de Nirvana">
+                    <figcaption>Nevermind</figcaption>
+                </figure>
+                <p class="albumdescription">Nevermind, ou le disque qui a bouleversé la face des nineties, et le plus gros carton passé (et
+                    probablement à venir) du rock alternatif. Mais Nevermind, c'est bien plus que cela : au delà des 27
+                    millions de galettes parées du bébé nageur cupide écoulées partout dans le monde, cet album
+                    phénomène s'est aussi drapé dans une sorte de gloire honteuse et embarrassante, détruisant petit à
+                    petit un Kurt Cobain qui n'est jamais parvenu à dompter le monstre qu'il avait engendré, manifeste
+                    de colère magnifique qui représentait déjà les prémices de la déchéance et de la mort du Christ aux
+                    yeux azurs.</p>
+                <div class="artistsocial">
+                    <a href="https://www.facebook.com/Nirvana">Facebook</a>
+                    <a href="https://twitter.com/nirvana">Twitter</a>
+                    <a href="https://www.instagram.com/kurtsmemoria/?hl=fr">Instagram</a>
+                </div>
+                <audio controls muted autoplay loop class="lecteur">
+                <source src="ressources/nirvana-smells-like-teen-spirit-official-music-video.mp3">
+                </audio>
+            </article>
+            <article class="album" id="musique4">
+                <figure class="albumfigure">
+                    <img  class="albumcover" src="ressources/synchronicity.jpg" alt="Synchonicity de The Police">
+                    <figcaption>Synchronicity</figcaption>
+                </figure>
+                <p class="albumdescription">Nous sommes en 1983, et au moment où tout le monde annonçait leur séparation, Police sort son 5ème
+                    album. Les tensions se sont exacerbées depuis plus d’un an, au sein du trio, et à plusieurs reprises
+                    nos trois hommes ont failli atteindre le point de non retour.
+                    Pour en revenir à l’album, « Synchronicity » est sans aucun doute l’album de la maturité extrême
+                    pour Police. Ici le son est clair, net et précis. Toutes les compositions ont gagné en richesse et
+                    en profondeur. Tour à tour, métaphores, poésie, références culturelles jalonnent les textes. Mais ça
+                    a été certainement l’album le plus difficile à réaliser pour le trio britannique.
+                    Sans aucun doute le disque le plus abouti des « Policemen » mais celui qui annoncera aussi la
+                    séparation du groupe quelque temps après le « Synchronicity Tour ».</p>
+                <div class="artistsocial">
+                    <a href="https://www.facebook.com/thepolice/">Facebook</a>
+                    <a href="https://twitter.com/official_police?lang=fr">Twitter</a>
+                    <a href="https://www.instagram.com/thepolice.id/?hl=fr">Insatgram</a>
+                </div>
+                <audio controls muted autoplay loop class="lecteur">
+                    <source src="ressources/the-police-every-breath-you-take.mp3">
+                </audio>
+            </article>
+        </section>
+    </main>
+    <img class=wave src="wave.png">
+    <footer>
+        <div class= Flex-H>
+            <a href="phonotheque.html" class="myButton">Accueil</a>
+            <a href="style.html" class="myButton">Rap Français</a>
+            <a href="style1.html" class="myButton">Musique de DJ</a>
+            <a href="style2.html" class="myButton">Rock and Roll</a>
+            <a href="style3.html" class="myButton">Jazz</a>
+        </div>
+        <img class=wave src="reverse-wave2.png">
+    </footer>
+</body>
+</html>

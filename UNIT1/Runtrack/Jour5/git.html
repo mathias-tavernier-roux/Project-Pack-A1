@@ -1,0 +1,285 @@
+<head>
+    <meta charset="utf-8" />
+<link rel="stylesheet" href="git.css">
+</head>
+<body>
+<img src=wave-top.png>
+    <header>
+        <h1>Liste des Commandes Git Les Plus Importantes</h1>
+        <h2>La Base Pour Utiliser Git</h2>
+    </header>
+<main>
+<div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="colonne_entete" style="width:4%;">Utilité de La Commande</th>
+                <td class="colonne_entete" style="text-align:center;width:30%;">Commande Git</th>
+                <td class="colonne_entete" style="text-align:center;width:60%;">Description Rapide</th>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Creer Une Branche</td>
+                <td class="colonne" style="">git <span class="italique">branch <b>newBranch</b></span> </td>
+                <td class="colonne" style="">Crée dans le repo local la nouvelle branche <span class="italique"><b>newBranch</b></span> qui est un fork de la branche courante.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Renommer Une Branche</td>
+                <td class="colonne" style="">git <span class="italique">branch -m <b>locBranch</b></span></td>
+                <td class="colonne" style="">Renomme la branche courante avec le nouveau nom <span class="italique"><b>locBranch</b></span>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer Une Branche du Depot</td>
+                <td class="colonne" style="">git <span class="italique">branch -d <b>locBranch</b></span></td>
+                <td class="colonne" style="">Supprime la branche <span class="italique"><b>locBranch</b></span> du repo local.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Traquer Une Branche Distance</td>
+                <td class="colonne" style="">git <span class="italique">branch -u <b>origin/remBranch</b></span></td>
+                <td class="colonne" style="">Ordonne à la branche courante de traquer la branche distante <span class="italique"><b>remBranch</b></span>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Lister Les Branches Sur Le Depot Local</td>
+                <td class="colonne" style="">git <span class="italique">branch -v</span> </td>
+                <td class="colonne" style="">Liste les branches sur le repo local.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Lister Les Branches Sur Le Depot Distant</td>
+                <td class="colonne" style="">git <span class="italique">branch -v -a</span> </td>
+                <td class="colonne" style="">Liste les branches sur le repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Compter Le Nombre de Branches Sur le Depot Distant</td>
+                <td class="colonne" style="">git <span class="italique">branch -r | wc -l</span> </td>
+                <td class="colonne" style="">Compte le nombre de branches effectivement présentes sur le repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Voir L'Historique des Commits Effectués</td>
+                <td class="colonne" style="">git <span class="italique">log --pretty=oneline</span> </td>
+                <td class="colonne" style="">Affiche l’historique des commits effectués sur la branche courante, chaque commit tenant uniquement sur une ligne.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Lister Les Commits Recents qui N'Ont Pas Etait Envoyé</td>
+                <td class="colonne" style="">git <span class="italique">log --name-status HEAD^..HEAD</span> </td>
+                <td class="colonne" style="">Liste tous les commits récents effectués, mais non encore pushés.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Créer un Tag Dans la Branche Courante</td>
+                <td class="colonne" style="">git <span class="italique">tag <b>nomTag</b></span></td>
+                <td class="colonne" style="">Crée un tag de nom <b><span class="italique">nomTag</span></b> sur la branche courante.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Donner les Detail d'Un Tag De La Branche Courante</td>
+                <td class="colonne" style="">git <span class="italique">show <b>nomTag</b></span></td>
+                <td class="colonne" style="">Donne les détails sur le tag <b><span class="italique">nomTag</span></b> de la branche courante.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Lister les Tag de La Branche Courante</td>
+                <td class="colonne" style="">git <span class="italique">tag</span></td>
+                <td class="colonne" style="">Liste tous les tags placés sur la branche courante.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Remettre En Cache Les Modifications de La Branche Courante</td>
+                <td class="colonne" style="">git <span class="italique">stash</span></td>
+                <td class="colonne" style="">Remet en cache (appelé Remise) les modifications sur la branche courante.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Lister Les Modification</td>
+                <td class="colonne" style="">git <span class="italique">stash list</span></td>
+                <td class="colonne" style="">Liste tous les stash sur le repo local.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Voir Les Fichiers Modifié Lors Du Dernier Stash</td>
+                <td class="colonne" style="">git <span class="italique">stash show</span></td>
+                <td class="colonne" style="">Permet de voir la liste des fichiers modifiés du dernier stash.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Appliquer Le Dernier Stash du Cache Git</td>
+                <td class="colonne" style="">git <span class="italique">stash apply</span></td>
+                <td class="colonne" style="">Applique le tout dernier stash dans la pile des stash du cache de git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Appliquer Un Stash du Cache Git</td>
+                <td class="colonne" style="">git <span class="italique">stash apply stash@{n}</span></td>
+                <td class="colonne" style="">Applique le stash numéro n dans la pile des stash du cache de git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer Le Dernier Stash Dans le Cache</td>
+                <td class="colonne" style="">git <span class="italique">stash pop</span></td>
+                <td class="colonne" style="">Supprime le tout dernier stash dans la pile des stash du cache de git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer Un Stash dans le Cache de Git</td>
+                <td class="colonne" style="">git <span class="italique">stash pop stash@{n}</span></td>
+                <td class="colonne" style="">Supprime le stash numéro n dans la pile des stash du cache de git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Cloner Un Repo</td>
+                <td class="colonne" style="">git <span class="italique">clone <b>urlRepoDistant</b></span></td>
+                <td class="colonne" style="">Clone le projet du repo distant vers un repo local (répertoire courant).</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Cloner Un Repo</td>
+                <td class="colonne" style="">git <span class="italique">clone <b>urlDistant</b> <b>pathRepoLocal</b></span></td>
+                <td class="colonne" style="">Clone le projet du repo distant en précisant le répertoire <b><span class="italique">pathRepoLocal</span></b> qui constituera le repo local.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer TOUTES Les Branches Mergés</td>
+                <td class="colonne" style="">git <span class="italique">remote prune origin</span></td>
+                <td class="colonne" style="">Supprime toutes les branches mergées et inutiles sur le repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer TOUTES Les Branches Mergés (Autre Methode)</td>
+                <td class="colonne" style="">git <span class="italique">fetch origin --prune</span></td>
+                <td class="colonne" style="">Supprime toutes les branches mergées et inutiles sur le repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Syncroniser Repo Local a Partir d'Un Repo Distant</td>
+                <td class="colonne" style="">git remote update origin --prune</td>
+                <td class="colonne" style="">Synchronise le repo local à partir du repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Supprimer Une Branche Sur Un Repo Distant</td>
+                <td class="colonne" style="">git <span class="italique">push origin –-delete <b>remBranch</b></span></td>
+                <td class="colonne" style="">Supprime la branche de nom <span class="italique"><b>remBranch</b></span> du repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Envoyer Une Branche dans Un Repo Avec Un Nouveau Nom</td>
+                <td class="colonne" style="">git <span class="italique">push -u origin <b>newBranch</b></span></td>
+                <td class="colonne" style="">Pousse la branche locale courante sur le repo distant au nom de <b><span class="italique">newBranch</span></b>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Envoyer Une Branche dans Un Repo Avec Un Nouveau Nom (Autre Methode)</td>
+                <td class="colonne" style="">git <span class="italique">push --set-upstream origin <b>newBranch</b></span></td>
+                <td class="colonne" style="">Pousse la branche locale courante sur le repo distant au nom de <b><span class="italique">newBranch</span></b>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Envoyer Les Commits Sur Un Repo Distant</td>
+                <td class="colonne" style="">git <span class="italique">push</span></td>
+                <td class="colonne" style="">Pousse les commits de la branche locale courante vers celle distante traquée.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Fetch</td>
+                <td class="colonne" style="">git <span class="italique">fetch</span></td>
+                <td class="colonne" style="">Actualise et vérifie si la branche locale courante est iso ou non à celle du repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Pool</td>
+                <td class="colonne" style="">git <span class="italique">pull</span></td>
+                <td class="colonne" style="">Réalise la commande 33 et en même temps récupère en local, les éventuels commits présents sur celle distante trackée.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Changer de Branche</td>
+                <td class="colonne" style="">git <span class="italique">checkout <b>locBranch</b></span></td>
+                <td class="colonne" style="">Changement de branche : passage de la branche courante à la branche <b><span class="italique">locBranch</span></b>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Copie Une Branche Distante En Local</td>
+                <td class="colonne" style="">git <span class="italique">checkout -b <b>locBranch</b> origin/<b>rembranch</b></span></td>
+                <td class="colonne" style="">Créer à partir de la branche distante <b><span class="italique">rembranch</span></b>, la branche locale <b><span class="italique">locBranch</span></b> et switcher vers cette dernière.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Copie Une Branche Existante En Local En Concervant Le Nom</td>
+                <td class="colonne" style="">git <span class="italique">checkout --track origin/<b>rembranch</b></span></td>
+                <td class="colonne" style="">Similaire à la commande numéro 36. Ici <span class="italique"><b>locBranch</b></span> a le même nom que <span class="italique"><b>rembranch</b></span>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Commit Sur La Branche Courante</td>
+                <td class="colonne" style="">git <span class="italique">cherry-pick <b>commit-sha1</b></span></td>
+                <td class="colonne" style="">Commit sur la branche courante, un commit identifié par <b><span class="italique">commit-sha1</span></b> effectué ailleurs.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Merger Une Branche</td>
+                <td class="colonne" style="">git <span class="italique">merge <b>locbranch</b></span></td>
+                <td class="colonne" style="">Merge la branche de nom <b><span class="italique">locbranch</span></b> dans la branche courante (pas de perte d'historique).</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Restaurer L'Historique Git</td>
+                <td class="colonne" style="">git <span class="italique">rebase <b>locbranch</b></span></td>
+                <td class="colonne" style="">Rebase la branche de nom <b>locbranch</b> dans la branche courante (perte d'historique).</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Annuler le Dernier Commit</td>
+                <td class="colonne" style="">git <span class="italique">reset --hard HEAD^</span></td>
+                <td class="colonne" style="">Force l'annulation du dernier commit avec suppression de l'historique.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Creer Un Commit Inversé</td>
+                <td class="colonne" style="">git <span class="italique">revert HEAD^ .. HEAD</span></td>
+                <td class="colonne" style="">Crée un commit inverse annulant le dernier commit pushé sur le repo distant.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Creer Un Commit Inversé</td>
+                <td class="colonne" style="">git <span class="italique">revert <b>commit-sha1</b></span></td>
+                <td class="colonne" style="">Crée le commit inverse annulant un commit précisé par son <b><span class="italique">commit-sha1</span></b>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Configuration de Git</td>
+                <td class="colonne" style="">git <span class="italique">config --global <b>clef</b> <b>val</b></span></td>
+                <td class="colonne" style="">Affecte la valeur <span class="italique"><b>val</b></span> au champ <b><span class="italique">clef</span></b> de la config global git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Configuration de Git</td>
+                <td class="colonne" style="">git <span class="italique">config --global --unset <b>clef</b></span></td>
+                <td class="colonne" style="">Supprime la <b><span class="italique">clef</span></b> de la configuration globale de git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Montrer La Configuration de Git</td>
+                <td class="colonne" style="">git <span class="italique">config --list</span></td>
+                <td class="colonne" style="">Liste tous les paramètres (<span class="italique">clef</span> = <span class="italique">valeur</span>) de la config global git.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Annuler</td>
+                <td class="colonne" style="">git <span class="italique">checkout -- <b>pathToFile</b></span></td>
+                <td class="colonne" style="">Annule les modifications en cours effectuées sur le fichier <b><span class="italique">pathToFile</span></b>.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Deplacer Fichier</td>
+                <td class="colonne" style="">git <span class="italique">rm --cahed <b>pathToFile</b></span></td>
+                <td class="colonne" style="">Deplace le fichier <b><span class="italique">pathToFile</span></b> de la zone d'index vers le working set.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Comparer</td>
+                <td class="colonne" style="">git <span class="italique">diff <b>pathToFile</b></span></td>
+                <td class="colonne" style="">Compare les modification en cours du fichier <b><span class="italique">pathToFile</span></b> par rapport à sa version sur le repo local.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Ajouter</td>
+                <td class="colonne" style="">git <span class="italique">add <b>pathToFile</b></span></td>
+                <td class="colonne" style="">Ajoute le fichier modifié <b><span class="italique">pathToFile</span></b> dans la zone d'index pour qu'il soit prêt à être commité.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Appliquer</td>
+                <td class="colonne" style="">git <span class="italique">commit -m <b>"commentaire"</b></span></td>
+                <td class="colonne" style="">Commit dans le repo local tous les fichiers présents dans la zone d'index en ajoutant un commentaire propre obligatoire.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Creer Depot</td>
+                <td class="colonne" style="">git <span class="italique">init</span></td>
+                <td class="colonne" style="">Marque le répertoire courant comme étant un repo local Git. Concrètement crée le dossier .git dans ce répertoire.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Repo</td>
+                <td class="colonne" style="">git <span class="italique">branch --merged | xargs git branch -d</span></td>
+                <td class="colonne" style="">Supprime sur le repo local toutes les branches qui ont été mergée dans une autre branche.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Repo</td>
+                <td class="colonne" style=""> git <span class="italique">remote add origin <b>pathToRemoteProject.git</b></span></td>
+                <td class="colonne" style="">Indique à un repo git local vierge, quel est le repo distant dont il en est l'image.</td>
+            </tr>
+            <tr>
+                <td class="colonne" style="">Repo</td>
+                <td class="colonne" style=""> git <span class="italique">remote set-url origin <b>pathToRemoteProject.git</b></span></td>
+                <td class="colonne" style="">Change sur un repo git local non vierge, l'url du repo distant dont il en est l'image.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </main>
+    <footer>
+        <section>
+            <h3>Bonne Seance de Code et Bonne Utilisation de Git</h3>
+        </section>
+    </footer>
+    <img src="wave-foot.png"></a>
+</body>

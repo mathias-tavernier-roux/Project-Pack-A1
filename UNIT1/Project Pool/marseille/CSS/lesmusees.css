@@ -1,0 +1,24 @@
+body{
+	background-attachment: fixed;
+}
+
+.lesmusees{
+	width: 100%;
+	margin: 35vh 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+	.lesmusees h1, .lesmusees h2{width: 100%; font-family: 'Lobster', cursive;}
+
+section{
+	display: flex;
+	background-color: pink;
+	width: 60vw;
+	height: 15vh;
+}
+
+td, th{border: solid 2px black; width: 20vw; height: 10vh;}
+	td{background-color: gray;}
+	th{background-color: white;}
+	
