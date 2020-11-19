@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu:wght@300&display=swap');
+h1
+{
+font-family: 'Goldman', cursive;
+}
+h3
+{
+font-family: 'Ubuntu', sans-serif;
+}
+p
+{
+font-family: 'Ubuntu', sans-serif;
+}
+a
+{
+font-family: 'Ubuntu', sans-serif;
+}
+thead
+{
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+}
 .DC-Button {
   background-color:#c74545;
   border-radius:28px;
@@ -10,6 +32,7 @@
   padding:16px 31px;
   text-decoration:none;
   text-shadow:0px 1px 0px #662828;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 .DC-Button:hover {
@@ -25,7 +48,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: 'Ubuntu', sans-serif;
   font-size:17px;
   font-weight:bold;
   padding:18px 31px;

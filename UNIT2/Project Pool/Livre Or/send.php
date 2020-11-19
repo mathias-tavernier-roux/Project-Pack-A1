@@ -8,6 +8,13 @@ session_start();
     $requete = "INSERT into `commentaires`(`commentaire`, `id_utilisateur`, `date`, `projet`) VALUES ('$avis','$user', CURRENT_TIME, '$projet')";
     $query = mysqli_query($db, $requete);
     echo $query;
-    if ($query) {
-        echo '<h3>Commentaire Ajouté Avec Succés</h3>';
+    if ($query) 
+    {
+        header("Location: livre-or.php");
+        exit();
+    }
+    else
+    {
+        header("Location: commentaire.php");
+        exit();
     }

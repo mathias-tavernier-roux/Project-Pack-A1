@@ -14,8 +14,7 @@ if (isset($_REQUEST['username'], $_REQUEST['password'])){
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($conn, $password);
 	//requéte SQL + mot de passe crypté
-    $query = "INSERT into `utilisateurs` (login, password)
-              VALUES ('$username','".hash('sha256', $password)."')";
+    $query = "INSERT into `utilisateurs` (login, password) VALUES ('$username','".hash('sha256', $password)."')";
 	// Exécute la requête sur la base de données
     $res = mysqli_query($conn, $query);
     if($res){

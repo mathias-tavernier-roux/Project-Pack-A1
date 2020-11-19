@@ -11,6 +11,7 @@ if($_SESSION["username"] == "Anonymous"){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Poster Un Commentaire</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
 <link rel="stylesheet" type="text/css" href="view.css" media="all">
 <script type="text/javascript" src="view.js"></script>
 
@@ -20,7 +21,7 @@ if($_SESSION["username"] == "Anonymous"){
 	<img id="top" src="top.png" alt="">
 	<div id="form_container">
 	
-		<h1><a>Poster Un Commentaire</a></h1>
+		<h1>Poster Un Commentaire</h1>
 		<form id="avis" class="forms"  method="post" action="send.php">
 					<div class="form_description">
 			<h2>Poster Un Commentaire</h2>

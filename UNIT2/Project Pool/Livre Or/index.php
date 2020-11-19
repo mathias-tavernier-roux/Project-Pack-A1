@@ -14,16 +14,26 @@
 	<body>
 		<div class="sucess">
 		<h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
-		<p>Vous Pouvez Maintenant Accéder au Livre D'Or et a La Gestion de Votre Profil</p>
-            <a href="livre-or.php" class="LO-Button">Acceder Au Livre d'Or</a>
-            <?php
+		<?php
             if($_SESSION['username'] == "Anonymous")
                 {
-            echo "<a href='login.php' class='C-Button'>Se Connecter</a>";
-            echo "<a href='register.php' class='C-Button'>S'Inscrire</a>";
+            echo "<p>Vous Pouvez Lire Le Livre d'Or Mais Vous Ne Pouvez Pas Poster de Commentaire (Il Faut Etre Authentifié pour Cela)</p>";
                 }
             else
                 {
+			echo "<p>Vous Pouvez Maintenant Accéder au Livre D'Or et a La Gestion de Votre Profil</p>";
+                }
+            ?>
+            <a href="livre-or.php" class="C-Button">Acceder Au Livre d'Or</a>
+            <?php
+            if($_SESSION['username'] == "Anonymous")
+                {
+            echo "<a href='login.php' class='DC-Button'>Se Connecter</a>";
+            echo "<a href='register.php' class='DC-Button'>S'Inscrire</a>";
+                }
+            else
+                {
+            echo "<a href='profile.php' class='DC-Button'>Modifier Son Mot de Passe</a>";
             echo "<a href='logout.php' class='DC-Button'>Se Deconnecter</a>";
                 }
             ?>

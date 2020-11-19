@@ -1,7 +1,7 @@
 ﻿<?php
 session_start();
 $db = mysqli_connect ("localhost", "root", "", "livreor");
-$requete = "SELECT `date`, `id_utilisateur`, `commentaire` FROM `commentaires`";
+$requete = "SELECT `date`, `id_utilisateur`, `commentaire`, `projet` FROM `commentaires` ORDER BY `id`";
 $query = mysqli_query ($db, $requete);
 $resultats = mysqli_fetch_all ($query);
 // echo  $requete;
@@ -16,6 +16,7 @@ $MAX = $MAX - 1
 	</head>
 	<body>
 		<div class="sucess">
+        <a href='index.php' class='DC-Button'>Revenir a L'Index</a>
 		<h1>Bienvenue Sur Mon Livre D'Or <?php echo $_SESSION['username']; ?> !</h1>
             <h3>Ce Dernier Vous Permet de</h3>
             <h3>- Laisser Votre Avis Sur Les Differentes Pages Web Que J'ai Crée Pendant Ma Formation</h3>
@@ -25,7 +26,7 @@ $MAX = $MAX - 1
             if($_SESSION['username'] == "Anonymous")
             {
             echo '<p>Vous devez Etre Connecté pour Ecrire Un Commentaire</p>';
-            echo "<a href='login.php' class='C-Button'>Se Connecter</a>";
+            echo "<a href='login.php' class='DC-Button'>Se Connecter</a>";
             }
             else
             {
@@ -36,8 +37,8 @@ $MAX = $MAX - 1
     <thead>
     <td>Jour</td>
     <td>Utilisateur</td>
-    <td>Projet Concerné</td>
     <td>Commentaire</td>
+    <td>Projet Concerné</td>
     </thead>
     <tbody>
     <?php
