@@ -33,7 +33,7 @@
                 }
             else
                 {
-            echo "<a href='profile.php' class='DC-Button'>Modifier Son Mot de Passe</a>";
+            echo "<a href='profil.php' class='DC-Button'>Modifier Son Mot de Passe</a>";
             echo "<a href='logout.php' class='DC-Button'>Se Deconnecter</a>";
                 }
             ?>
