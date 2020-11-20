@@ -1,24 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu:wght@300&display=swap');
+.v-flex
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 h1
 {
 font-family: 'Goldman', cursive;
+color: #FFFFFF;
 }
 h3
 {
 font-family: 'Ubuntu', sans-serif;
+color: #FFFFFF;
 }
 p
 {
 font-family: 'Ubuntu', sans-serif;
+color: #FFFFFF;
 }
 a
 {
 font-family: 'Ubuntu', sans-serif;
+color: #FFFFFF;
 }
-thead
+iframe
 {
-font-family: 'Ubuntu', sans-serif;
-font-weight: bold;
+border-color: #FFFFFF;
+border-radius: 20px;
 }
 .DC-Button {
   background-color:#c74545;
@@ -142,4 +152,16 @@ p.errorMessage {
 table{
   table-layout: fixed;
   width: 100%;
+  color: #FFFFFF;
+}
+thead
+{
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+font-size: large;
+}
+td
+{
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
 }
