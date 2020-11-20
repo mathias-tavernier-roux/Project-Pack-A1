@@ -35,8 +35,9 @@ if (isset($_REQUEST['username']))
     if($res)
     {
        echo "<div class='sucess'>
-             <h3>Les Informations de L'Utilisateur Ont été Modifié avec succés</h3>
-             <p>Cliquez ici pour vous <a href='admin.php'>Reconnecter a L'espace Administrateur</a></p>
+             <h3>Les Informations de L'Utilisateur Selectionné Ont été Modifié avec succés</h3>
+             <h3>Vous devez recharger la page pour voir les resultats dans l'espace administrateur</h3>
+             <p>Cliquez ici pour vous <a href='profilA.php'>Relancer L'ID Changer</a></p>
 			 </div>";
     }
 }else{
